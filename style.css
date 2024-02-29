@@ -652,3 +652,17 @@ footer {
     }
     
 }
+.back-video {
+    position: relative; /* Ensure the video element is a positioning context */
+}
+
+.loading-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    z-index: 1; /* Ensure the text is above the video */
+}
