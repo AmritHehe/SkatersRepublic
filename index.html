@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skater Republic - Arcade Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+ <!-- Link to your CSS file -->
+</head>
+<body>
+    
+<!-- Navigation Bar -->
+<nav>
+    <div class="logo">
+        <img src="your-logo.png" alt="Skater Republic Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#purchase">Purchase</a></li>
+        <li><a href="#social">Social Media</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+</nav>
+<video autoplay loop muted plays-inline class="back-video"><source src="videoo.mp4" type = "video/mp4"></video>
+<!-- Parallax Background Trailer -->
+<div class="parallax" style="background-image: url('background-trailer.jpg');">
+    <!-- Video Embed -->
+    <div class="video-container">
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/B1TRRiLOw0Q" frameborder="0" allowfullscreen></iframe> -->
+    <div class = "realText"><h1>Shred the Streets,<br>
+        Ignite the Thrill<br>
+        Where Style Meets Velocity,<br>
+        and Every Ride is a Bold Adventure!</h1></div>
+    </div>
+</div>
+<!-- About Us Section -->
+<section id="about" class="about-section">
+    <div class="about-container">
+        <div class="about-header">
+            <h2>About Us</h2>
+        </div>
+        <!-- <div>
+            <img src="bike.png" alt="" class="hehe"> 
+        </div> -->
+        <div class="about-content">
+            <p>
+                Introducing Skater Republic, the thrilling upcoming arcade game that puts you right in the heart of a dynamic skateboarding adventure! Explore expansive skateparks, bustling cityscapes, and renowned real-life locations for an immersive experience like no other.
+            </p>
+            <p>
+                Featuring intuitive controls, a sophisticated trick system, and a compelling progression framework, players will find themselves immersed in a world where every achievement feels truly gratifying. Keep an eye out as we work diligently to bring this extraordinary gaming experience to life.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="media" class="media-section">
+    <h2>Media</h2>
+    <div class="media-grid">
+        <div class="media-item">
+            <img src="images.jpeg" alt="Image 1 Description">
+        </div>
+        <!-- <div class="media-item">
+            <img src="image2.jpg" alt="Image 2 Description" style="object-fit: contain;">
+        </div> -->
+        <!-- <div class="media-item">
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div> -->
+        <div class="media-item">
+            <img src="image2.jpg" alt="Image 2 Description">
+        </div>
+        <div class="media-item">
+            <img src="hehe.jpg" alt="Image 3 Description">
+        </div>
+        <div class="media-item">
+            <img src="images.jpeg" alt="Image 1 Description">
+        </div>
+        <!-- Add more media items as needed -->
+    </div>
+</section>
+<section id="news" class="news-section">
+    <h2>Latest News</h2>
+    <div class="news-grid">
+        <article class="news-item">
+            <img src="stock-image1.jpg" alt="News Image 1">
+            <h3><a href="#">We’re Reading Your Comments!</a></h3>
+            <p>Dec 21, 2023</p>
+        </article>
+        <article class="news-item">
+            <img src="stock-image2.jpg" alt="News Image 2">
+            <h3><a href="#">skate. Day 2023</a></h3>
+            <p>Sep 14, 2023</p>
+        </article>
+        <article class="news-item">
+            <img src="stock-image3.jpg" alt="News Image 3">
+            <h3><a href="#">The Board Room: Episode 04</a></h3>
+            <p>Aug 17, 2023</p>
+        </article>
+        <!-- Add more news items as needed -->
+    </div>
+</section>
+
+<section id="purchase">
+    <!-- <img src="purchase-poster.jpg" alt="Purchase Background" class="purchase-image"> -->
+    <div> 
+    <div class="purchase-content">
+        
+        <h2>Get Skater Republic Now!&nbsp&nbsp&nbsp&nbsp</h2>
+        <p>Experience the thrill and excitement of Skater Republic. Purchase your copy today and join the skating revolution!&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+        <div class="options-section">
+            <div>
+                <label for="country">Select Country:</label>
+                <select id="country">
+                    <!-- Add your country options here -->
+                    <option value="usa">India</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+    
+            <div>
+                <label>Select Platform:</label>
+                <select id="platform">
+                    <option value="steam">Steam</option>
+                    <option value="ps4">PS4</option>
+                    <option value="ps5">PS5</option>
+                    <option value="xbox-one">Xbox One</option>
+                    <option value="xbox-series-x">Xbox Series X</option>
+                    <option value="epic-games">Epic Games</option>
+                    <option value="nintendo-switch">Nintendo Switch</option>
+                </select>
+            </div>
+    
+        </div>
+        <div class="pricing-options">
+            <div class="option" id="normall">
+                <h3>Standard Edition</h3>
+                <p>&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbspIncludes the base game &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp</p>
+                <p>$29.99</p>
+                <button onclick="addToCart('standard')">Add to Cart</button>
+            </div>
+
+            <div class="option" id="deluxee">
+                <h3>Deluxe Edition</h3>
+                <p>Includes additional in-game content</p>
+                <p>$49.99</p>
+                <button onclick="addToCart('deluxe')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Shopping Cart</h3>
+            <!-- Display cart items and total here -->
+        </div>
+
+        <div class="checkout">
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+</section>
+<section id = "social"  class="social-media-section">
+    <h2>Join the Skater Republic Community!</h2>
+    <p>Stay connected with us on social media for the latest updates and announcements.</p>
+
+    <button class="join-community-button">Join the Community on Discord</button>
+
+    <div class="social-icons">
+        <!-- Replace these links with your actual social media profiles -->
+        <a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+        <a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+        <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+        <!-- Add more social media icons as needed -->
+    </div>
+</section>
+<section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Feel free to reach out for any inquiries, feedback, or just to say hi.</p>
+    <form action="submit_form.php" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <div class="social-links">
+        <a href="https://twitter.com/yourpage" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+        <a href="https://facebook.com/yourpage" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="https://instagram.com/yourpage" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+        <!-- <a href="https://linkedin.com/yourpage" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a> -->
+    </div>
+    <a href="index.html" class="back-link">Back to Home</a>
+</section>
+
+
+<!-- <div class = "blank">
+    <p>
+        hallo
+    </p>
+</div> -->
+
+<!-- Other Sections: Media, News, Purchase, Social Media, Contact Us -->
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Skater Republic. All rights reserved.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script> 
+
+<script>
+    //gsap
+    gsap.to('.realText', { y: 20, duration: 1 ,delay: 1});
+    gsap.from('.realText', {opacity: 0, duration: 1,delay: 1});
+
+    let t1 = gsap.timeline({
+        scrollTrigger:{ 
+             trigger: '.realText', 
+             start: '120% 45%' , 
+             end: '350% 70%',
+             scrub: true,
+             markers :false
+        }
+    })
+    t1.to('.realText',{
+        // x: 800
+        opacity : 0
+    })
+    let t2 = gsap.timeline({
+        scrollTrigger:{ 
+             trigger: '.back-video', 
+            //  ease: "elastic.out(1,0.3)",
+            ease: "power2.out",
+             start: '70% 25%' , 
+             end: '200% 70%',
+             scrub: true,
+             markers :false
+        }
+    })
+    t2.to('.back-video',{
+        scale: 0.5, 
+        y: -300,
+        // opacity:0,
+        // x: 800
+        // opacity : 0,
+        
+    })
+    let t0 = gsap.timeline({
+        scrollTrigger:{ 
+             trigger: '.back-video', 
+            //  ease: "elastic.out(1,0.3)",
+            ease: "power2.out",
+             start: '200% 25%' , 
+             end: '250% 70%',
+             scrub: true,
+             markers :false
+        }
+    })
+    t0.to('.back-video',{
+       
+        opacity:0,
+        // x: 800
+        // opacity : 0,
+        
+    })
+    const t3 = gsap.timeline({
+        scrollTrigger: {
+            trigger: "about",
+            start: "25% 25%",
+            end: "95% 70%", // Adjust based on the height of your sections
+            scrub: true,
+            pin: true,
+            markers: false
+        }
+    });
+     // Animation for About Section
+     t3.to("#about", { yPercent: -10,
+        // scale:1.03,
+
+    });
+     t3.to("#media", { yPercent: -10,
+    // scale:1.03,
+});
+     t3.to("#news", { yPercent: -10});
+
+// Animation for Purchase Section
+    t3.to("#purchase", { yPercent: -10
+    // offset :-5s;
+    });
+    t3.to("#social", { yPercent: -20
+    // offset :-5s;
+    });
+    t3.to("#contact", { yPercent: -10});
+    // gsap.registerPlugin(ScrollTrigger);
+    const aboutUsTl = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#about", // Trigger animation when the "About Us" section comes into view
+        start: "-5% 60%", // When the top of the trigger hits the center of the viewport
+        end: "200% 90%",
+        markers:false,
+        toggleActions: "play reverse play reverse", // Play animation on scroll, reverse on leaving
+    }
+});
+
+// Animate the text opacity from 0 to 1
+aboutUsTl.to(".about-content", {
+    opacity: 1,
+    // duration: 2, // Adjust duration as needed
+    ease: "power2.out", // Smooth easing
+});
+
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+    //lenis 
+    const lenis = new Lenis()
+
+    lenis.on('scroll', (e) => {
+        console.log(e)
+    })
+
+    function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+    }
+
+requestAnimationFrame(raf)
+</script>
+</body>
+</html>
