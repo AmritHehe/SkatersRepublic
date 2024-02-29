@@ -652,9 +652,9 @@ footer {
     }
     
 }
-.back-video {
+/* .back-video {
     position: relative; /* Ensure the video element is a positioning context */
-}
+} */
 
 .loading-text {
     position: absolute;
